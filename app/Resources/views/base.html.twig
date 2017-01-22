@@ -2,12 +2,58 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <link href="http://gmpg.org/xfn/11" rel="profile">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Enable responsiveness on mobile devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+        <title>{% block title %}Welcome!{% endblock %} - {{ site.owner }}</title>
+
+        <!-- CSS -->
+        {% stylesheets
+            'css/resets.css'
+            'css/main.css'
+            filter='cssrewrite' output='css/compiled/app.css' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Walter+Turncoat">
+
+        <!-- Icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-icon-precomposed.png">
+        <link rel="shortcut icon" href="/public/favicon-32x32.png">
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        <div class="header">
+            <div class="container header-sticky">
+                <div class="header-about">
+                        <img src="/images/logo.jpg" width="" height="" />
+                    <h1>
+                        <a href="/">
+                            {{ site.title }}
+                        </a>
+                    </h1>
+                    <p>{{ site.description }}</p>
+                </div>
+
+                <nav class="header-nav">
+                </nav>
+            </div>
+        </div>
+        <div class="content container">
+            {% block body %}{% endblock %}
+            <p class="copyright">
+                <div class="social">
+                    <ul>
+                        <li>&copy; {{ site.owner }}</li>
+                        {% for link in site.social %}
+                            <li><a class="header-nav-item" href="{{ link.link }}" target="_blank" title="{{ link.text }}"><i class="fa fa-3x {{ link.icon }}"></i></a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </p>
+        </div>
     </body>
 </html>

@@ -1,0 +1,88 @@
+html {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 58em) {
+    html {
+        font-size: 20px;
+    }
+}
+
+body {
+    background: #F5F5F5;
+}
+
+.header {
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #fff;
+}
+.header img {
+    max-width: 8rem;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+}
+.header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.container {
+    max-width: 38rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-nav {
+    margin-bottom: 1rem;
+}
+
+.header a {
+    color: #303030;
+}
+.header-nav-item {
+    display: block;
+    line-height: 1.75;
+}
+
+.social {
+    display: block;
+    margin: 10px 0;
+    font-size: 0.8rem;
+    color: #adadad;
+    text-align: center;
+}
+.social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.social ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.social ul li a {
+    font-size: 1em;
+    color: #adadad;
+}
+
+.content {
+    padding-top:    4rem;
+    padding-bottom: 4rem;
+}
+
+@media (min-width: 48em) {
+    .content {
+        max-width: 38rem;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    line-height: 1.25;
+    font-weight: normal;
+    color: #313131;
+    text-rendering: optimizeLegibility;
+    font-family: "Walter Turncoat";
+}
