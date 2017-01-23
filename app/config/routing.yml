@@ -1,5 +1,12 @@
-app:
-    resource: "@AppBundle/Resources/config/routing.yml"
-    prefix: /{_locale}/
+homepage:
+    path: /{_locale}/
+    defaults: { _controller: app.main_controller:showAction, page: index }
     requirements:
         _locale: en|kr
+
+show:
+    path: /{_locale}/{page}
+    defaults: { _controller: app.main_controller:showAction }
+    requirements:
+        _locale: en|kr
+        page: wedding|contact
