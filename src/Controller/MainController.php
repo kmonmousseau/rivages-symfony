@@ -29,6 +29,6 @@ class MainController extends Controller
      */
     public function showAction(Request $request, $page)
     {
-        return $this->templateEngine->renderResponse(sprintf('default/%s.html.twig', $page));
+        return $this->templateEngine->renderResponse(sprintf('pages/%s.html.twig', $page), ['current_page' => $page]);
     }
 }

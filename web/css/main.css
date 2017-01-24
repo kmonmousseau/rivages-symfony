@@ -1,19 +1,20 @@
+/* Base containers */
 html {
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
-@media (min-width: 58em) {
+@media (min-width: 65em) {
     html {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
 body {
-    background: #F5F5F5;
+    background: #eee;
 }
 
+/* Header */
 .header {
     text-align: center;
-    padding: 1rem 1rem 1rem 1rem;
     background-color: #fff;
 }
 .header img {
@@ -26,7 +27,47 @@ body {
     font-size: 2rem;
     margin: 0;
 }
+.header-about {
+    padding: 1rem 1rem 0 1rem;
+}
 
+/* Header nav */
+.header-nav {
+    display: block;
+    font-size: 0.8rem;
+    color: #adadad;
+    text-align: center;
+}
+
+.header a {
+    color: #303030;
+}
+.header-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header-nav ul li {
+    vertical-align: middle;
+    display: inline-block;
+}
+.header-nav ul li a {
+    display: inline-block;
+    font-size: 1.2em;
+    color: #515151;
+    width: 5rem;
+    padding: 0.5em 0 0.5em 0;
+}
+.header-nav ul li a:hover {
+    background: #eee;
+    color: #000;
+    text-decoration: none;
+}
+.header-nav ul li.current a {
+    background: #eee;
+}
+
+/* Custom containers */
 .container {
     max-width: 38rem;
     padding-left: 1rem;
@@ -34,55 +75,73 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.header-nav {
-    margin-bottom: 1rem;
-}
-
-.header a {
-    color: #303030;
-}
-.header-nav-item {
-    display: block;
-    line-height: 1.75;
-}
-
-.social {
-    display: block;
-    margin: 10px 0;
-    font-size: 0.8rem;
-    color: #adadad;
-    text-align: center;
-}
-.social ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.social ul li {
-    display: inline-block;
-    margin: 0 5px;
-}
-.social ul li a {
-    font-size: 1em;
-    color: #adadad;
-}
 
 .content {
     padding-top:    4rem;
     padding-bottom: 4rem;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 65em) {
     .content {
-        max-width: 38rem;
+        max-width: 50rem;
     }
 }
 
+/* Countries flag part */
+.flags {
+    position: absolute;
+    top:0;
+    right:0;
+    margin: 3px;
+    text-align: left;
+}
+.flags a {
+    display: block;
+    font-size: 0.7rem;
+}
+.flags img,
+.flags span {
+    vertical-align: middle;
+}
+.flags img {
+    border: 1px solid #888;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.flags a:hover img {
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/* Hs */
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5rem;
     line-height: 1.25;
     font-weight: normal;
-    color: #313131;
     text-rendering: optimizeLegibility;
     font-family: "Walter Turncoat";
+}
+h1 {
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    display: block;
+    margin: 10px 0;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer ul li {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 5px;
+}
+.footer ul li a {
+    font-size: 1em;
 }

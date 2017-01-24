@@ -27,33 +27,45 @@
     </head>
     <body>
         <div class="header">
-            <div class="container header-sticky">
+            <div class="flags">
+                <a href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'en'})) }}">
+                    <img src="/images/english.png" width="30" height="20" /> <span>English</span>
+                </a>
+                <a href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'kr'})) }}">
+                    <img src="/images/korean.png" width="30" height="20" /> <span>Korean</span>
+                </a>
+            </div>
+            <div class="container">
                 <div class="header-about">
-                        <img src="/images/logo.jpg" width="" height="" />
+                    <img src="/images/logo.jpg" width="" height="" />
                     <h1>
-                        <a href="/">
+                        <a href="{{ path('homepage') }}">
                             {{ site.title }}
                         </a>
                     </h1>
                     <p>{{ site.description }}</p>
                 </div>
 
-                <nav class="header-nav">
+                <nav class="header-nav social">
+                    <ul>
+                        {% for page in ['homepage', 'classes', 'weddings', 'signature', 'about', 'contact'] %}
+                            <li class="navbar-item {{ current_page == page ? 'current' : '' }}">
+                                {% if page == 'homepage' %}
+                                    {% set url = path('homepage') %}
+                                {% else %}
+                                    {% set url = path('show', { 'page':page }) %}
+                                {% endif %}
+                                <a href="{{ url }}">{{ page|capitalize }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </nav>
             </div>
         </div>
         <div class="content container">
+
             {% block body %}{% endblock %}
-            <p class="copyright">
-                <div class="social">
-                    <ul>
-                        <li>&copy; {{ site.owner }}</li>
-                        {% for link in site.social %}
-                            <li><a class="header-nav-item" href="{{ link.link }}" target="_blank" title="{{ link.text }}"><i class="fa fa-3x {{ link.icon }}"></i></a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </p>
         </div>
+        {% include '_includes/footer.html.twig' %}
     </body>
 </html>

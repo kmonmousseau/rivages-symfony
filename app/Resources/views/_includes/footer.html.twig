@@ -1,0 +1,24 @@
+<div class="footer">
+    <div class="content container">
+        <ul>
+            <li class="footer-item">
+                &copy; {{ site.owner }}
+            </li>
+            <li class="footer-item">
+                &mdash;
+            </li>
+            <li class="footer-item">
+                <a href="http://blog.naver.com/benjaminjouet" target="_blank" title="{{ 'footer.social'|trans({'%social%':'Naver'}) }}">
+                    Blog Naver
+                </a>
+            </li>
+            {% for link in site.social %}
+                <li class="footer-item">
+                    <a href="{{ link.link }}" target="_blank" title="{{ 'footer.social'|trans({'%social%':link.name}) }}">
+                        <i class="fa fa-2x {{ link.icon }}"></i>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

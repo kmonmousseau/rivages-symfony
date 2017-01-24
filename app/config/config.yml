@@ -7,7 +7,7 @@ parameters:
     locale: en
 
 framework:
-    #translator:      { fallbacks: ["%locale%"] }
+    translator:      { fallbacks: ["%locale%"] }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -40,13 +40,21 @@ twig:
             description:
             social:
                 -
-                    link: "%facebook%"
-                    text: "see_facebook_page"
+                    name: Facebook
+                    link: "https://www.facebook.com/Benjamin-Jouet-402749259792956/"
                     icon: "fa-facebook-square"
                 -
-                    link: "%tumblr%"
-                    text: "see_tumblr_page"
+                    name: Tumblr
+                    link: "http://benjaminjouet.tumblr.com/"
                     icon: "fa-tumblr-square"
+                -
+                    name: Pinterest
+                    link: "https://fr.pinterest.com/jouetbenjamin/"
+                    icon: "fa-pinterest-square"
+                -
+                    name: Instagram
+                    link: "https://www.instagram.com/benjaminjouet/"
+                    icon: "fa-instagram"
 
 assetic:
     debug:          '%kernel.debug%'
