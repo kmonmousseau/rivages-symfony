@@ -9,6 +9,8 @@ DirectoryIndex app.php
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+    RewriteRule ^$ /en/ [L]
+
     RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
     RewriteRule ^(.*) - [E=BASE:%1]
 
@@ -17,8 +19,6 @@ DirectoryIndex app.php
 
     RewriteCond %{ENV:REDIRECT_STATUS} ^$
     RewriteRule ^app\.php(?:/(.*)|$) %{ENV:BASE}/$1 [R=301,L]
-
-    RewriteRule ^$ /en/ [L]
 
     RewriteCond %{REQUEST_FILENAME} -f
     RewriteRule ^ - [L]
