@@ -12,7 +12,7 @@ Options FollowSymlinks
     RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
     RewriteRule ^(.*) - [E=BASE:%1]
 
-    RewriteRule ^$ %{ENV:BASE}/en/ [L]
+    RewriteRule ^$ %{ENV:BASE}/en/ [R=301,L]
 
     RewriteCond %{HTTP:Authorization} .
     RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
