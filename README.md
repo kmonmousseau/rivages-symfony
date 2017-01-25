@@ -1,4 +1,6 @@
-rivages2
-========
+## Rivages-symfony
 
-A Symfony project created on January 15, 2017, 9:06 pm.
+Version Symfony du site perso de Benjamin Jouet
+- Symfony3
+- Pas de bundle
+- Anglais / Coréen
