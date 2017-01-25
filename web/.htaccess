@@ -1,6 +1,6 @@
 DirectoryIndex app.php
 
-# Options FollowSymlinks
+Options FollowSymlinks
 
 <IfModule mod_negotiation.c>
     Options -MultiViews
