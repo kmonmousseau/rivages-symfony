@@ -1,0 +1,35 @@
+version: '2'
+
+services:
+    logs:
+        container_name: rivages-logs
+        image: busybox
+        volumes:
+            - /var/www/html/app/cache
+            - /var/www/html/app/logs
+            - /var/log/apache2
+    mailcatcher:
+        container_name: rivages-mailcatcher
+        image: 1001pharmadev/mailcatcher
+        ports:
+            - "1081:1080"
+            - "1026:1025"
+    mysql:
+        container_name: rivages-mysql
+        image: mariadb:10
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_USER=rivages
+            - MYSQL_PASSWORD=rivages
+            - MYSQL_DATABASE=rivages
+        ports:
+            - "3307:3306"
+    web:
+        container_name: rivages-web
+        build: docker/.
+        ports:
+            - "8080:80"
+        volumes_from:
+            - logs
+        volumes:
+            - .:/var/www/html
