@@ -69,6 +69,7 @@ assetic:
         cssrewrite: ~
 
 liip_imagine :
+    driver: imagick
     loaders:
         default:
             filesystem:
