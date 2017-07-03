@@ -1,6 +1,3 @@
-footer:
-    social: See %social% page
-
 classes:
     title: Flower classes
     subtitle1: "함께 꽃꽂이를 배우며 플로리스트가 되어봐요!"
@@ -26,6 +23,8 @@ weddings:
         결혼식은 인생에 단 한번뿐인 아름다운 날이지요. 벤자민 주에 선생님은 특히 웨딩 부케를 전문으로 작업을 많이 해왔습니다.  행복한 여러분의 날을 위한 소망을 담아 정성들인 맞춤 부케를 제작해드립니다.  뿐만 아니라 연회 테이블 세팅,  센터피스, 웨딩 아치, 부토니에, 코사지, 화관 제작 등도 가능합니다.
     subtitle1: Spring – Summer Collection
     subtitle2: Autumn – Winter Collection
+    subtitle3: Hanbok bouquet
+    subtitle4: Kimono bouquet
 
 about:
     title: About
@@ -44,8 +43,7 @@ signature:
     subtitle2: Eggs
     subtitle3: Carré de Marie-Antoinette
 
-contact:
-    title: Contact
-    content: >
-        <p>Email: <a href="mailto:benjaminjouet@live.fr">benjaminjouet@live.fr</a></p>
-        <p>Kakao/ Line ID: benjaminlekiwi</p>
+footer:
+    social: Social
+    social_link: See %social% page
+    contact: Contact

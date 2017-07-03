@@ -8,10 +8,6 @@ html {
     }
 }
 
-body {
-    background: #eee;
-}
-
 /* Header */
 .header {
     text-align: center;
@@ -68,6 +64,9 @@ body {
 }
 
 /* Custom containers */
+.main-wrapper {
+    background: #eee;
+}
 .container {
     max-width: 38rem;
     padding-left: 1rem;
@@ -131,6 +130,10 @@ h1 {
     margin: 10px 0;
     font-size: 0.8rem;
     text-align: center;
+    color: #eee;
+}
+.footer h3 {
+    color: #eee;
 }
 .footer ul {
     list-style-type: none;
@@ -144,4 +147,26 @@ h1 {
 }
 .footer ul li a {
     font-size: 1em;
+}
+.footer .content {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.footer-social,
+.footer-contact {
+    width: 100%;
+    float: left;
+}
+@media (min-width: 65em) {
+    .footer-social,
+    .footer-contact {
+        width: 50%;
+        float: left;
+    }
+}
+.gallery {
+}
+.gallery a {
+    display: inline-block;
+    margin-right: 1%;
 }

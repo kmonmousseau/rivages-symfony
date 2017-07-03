@@ -1,0 +1,8 @@
+
+<div class="gallery">
+    {% for item in list %}
+        <a target="_blank" href="{{ asset(item.original) }}" title="{{ item.name }}">
+            <img src="{{ asset(item.original) | imagine_filter('my_thumb') }}" alt="{{ item.name }}" />
+        </a>
+    {% endfor %}
+</div>

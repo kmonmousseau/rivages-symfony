@@ -1,6 +1,3 @@
-footer:
-    social: See %social% page
-
 classes:
     title: Flower arranging class
     subtitle1: Let’s learn to make beautiful flower arrangement and become a real florist!
@@ -29,6 +26,8 @@ weddings:
         Benjamin also provides wedding table settings, centrepieces , arche, boutonniere, corsages, and flower wreath.
     subtitle1: Spring – Summer Collection
     subtitle2: Autumn – Winter Collection
+    subtitle3: Hanbok bouquet
+    subtitle4: Kimono bouquet
 
 about:
     title: About
@@ -47,8 +46,7 @@ signature:
     subtitle2: Eggs
     subtitle3: Carré de Marie-Antoinette
 
-contact:
-    title: Contact
-    content: >
-        <p>Email: <a href="mailto:benjaminjouet@live.fr">benjaminjouet@live.fr</a></p>
-        <p>Kakao/ Line ID: benjaminlekiwi</p>
+footer:
+    social: Social
+    social_link: See %social% page
+    contact: Contact

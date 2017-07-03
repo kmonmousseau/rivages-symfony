@@ -7,4 +7,5 @@
     <p>{{ 'about.content3'|trans }}</p>
     <p>{{ 'about.content4'|trans }}</p>
     <p>{{ 'about.content5'|trans }}</p>
+    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/about', 'name': 'about', 'ext': 'jpg', 'length': 6 } %}
 {% endblock %}

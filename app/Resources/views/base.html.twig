@@ -21,18 +21,17 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Walter+Turncoat">
 
         <!-- Icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-icon-precomposed.png">
-        <link rel="shortcut icon" href="/public/favicon-32x32.png">
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('apple-icon-precomposed.png') }}">
+        <link rel="shortcut icon" href="{{ asset('favicon-32x32.png') }}">
     </head>
     <body>
         <div class="header">
             <div class="flags">
                 <a href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'en'})) }}">
-                    <img src="/images/english.png" width="30" height="20" /> <span>English</span>
+                    <img src="{{ asset('images/english.png') }}" width="30" height="20" /> <span>English</span>
                 </a>
                 <a href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'kr'})) }}">
-                    <img src="/images/korean.png" width="30" height="20" /> <span>Korean</span>
+                    <img src="{{ asset('images/korean.png') }}" width="30" height="20" /> <span>Korean</span>
                 </a>
             </div>
             <div class="container">
@@ -48,7 +47,7 @@
 
                 <nav class="header-nav social">
                     <ul>
-                        {% for page in ['homepage', 'classes', 'weddings', 'signature', 'about', 'contact'] %}
+                        {% for page in ['homepage', 'classes', 'weddings', 'signature', 'about'] %}
                             <li class="navbar-item {{ current_page == page ? 'current' : '' }}">
                                 {% if page == 'homepage' %}
                                     {% set url = path('homepage') %}
@@ -62,9 +61,10 @@
                 </nav>
             </div>
         </div>
-        <div class="content container">
-
-            {% block body %}{% endblock %}
+        <div class="main-wrapper">
+            <div class="content container">
+                {% block body %}{% endblock %}
+            </div>
         </div>
         {% include '_includes/footer.html.twig' %}
     </body>

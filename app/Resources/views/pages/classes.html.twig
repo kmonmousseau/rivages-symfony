@@ -22,4 +22,5 @@
     <p>
         {{ "classes.content5"|trans|raw }}
     </p>
+    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/classes', 'name': 'classes', 'ext': 'jpg', 'length': 7 } %}
 {% endblock %}

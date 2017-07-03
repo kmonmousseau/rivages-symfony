@@ -2,7 +2,56 @@
 
 {% block body %}
     <h1>{{ 'weddings.title'|trans }}</h1>
-    <p>{{ 'weddings.content'|trans }}</p>
+    <p>{{ 'weddings.content'|trans|raw }}</p>
     <h3>{{ 'weddings.subtitle1'|trans }}</h3>
+    {% include '_includes/list_gallery.html.twig' with {
+        'list': [
+            { 'original': 'images/gallery/weddings/printemps-ete/Arc-en-ciel.jpg', 'name': 'Arc-en-ciel'},
+            { 'original': 'images/gallery/weddings/printemps-ete/Asille.jpg', 'name': 'Asille'},
+            { 'original': 'images/gallery/weddings/printemps-ete/Clema.jpg', 'name': 'Cléma'},
+            { 'original': 'images/gallery/weddings/printemps-ete/Fruitee.jpg', 'name': 'Fruitée'},
+            { 'original': 'images/gallery/weddings/printemps-ete/Goutte_de_Roses.jpg', 'name': 'Goutte de Roses'},
+            { 'original': 'images/gallery/weddings/printemps-ete/L_elegante.jpg', 'name': "L'élégante"},
+            { 'original': 'images/gallery/weddings/printemps-ete/L_ete.jpg', 'name': "L'été"},
+            { 'original': 'images/gallery/weddings/printemps-ete/La_Parfumee.jpg', 'name': 'La Parfumée'},
+            { 'original': 'images/gallery/weddings/printemps-ete/La_Pequinoise.jpg', 'name': 'La Péquinoise'},
+            { 'original': 'images/gallery/weddings/printemps-ete/La_Provencale.jpg', 'name': 'La Provençale'},
+            { 'original': 'images/gallery/weddings/printemps-ete/La_Rosee.jpg', 'name': 'La Rosée'},
+            { 'original': 'images/gallery/weddings/printemps-ete/Mara.jpg', 'name': 'Mara'},
+            { 'original': 'images/gallery/weddings/printemps-ete/Petale.jpg', 'name': 'Pétale'},
+            { 'original': 'images/gallery/weddings/printemps-ete/Pomme_de_Jus.jpg', 'name': 'Pomme de Jus'},
+            { 'original': 'images/gallery/weddings/printemps-ete/Promesse.jpg', 'name': 'Promesse'},
+            { 'original': 'images/gallery/weddings/printemps-ete/Pure.jpg', 'name': 'Pure'},
+            { 'original': 'images/gallery/weddings/printemps-ete/Ricolee.jpg', 'name': 'Ricolée'},
+            { 'original': 'images/gallery/weddings/printemps-ete/Vert_Bleue.jpg', 'name': 'Vert Bleue'},
+            { 'original': 'images/gallery/weddings/printemps-ete/wedding_bouquet.jpg', 'name': 'Wedding bouquet'},
+        ]
+    } %}
+
     <h3>{{ 'weddings.subtitle2'|trans }}</h3>
+    {% include '_includes/list_gallery.html.twig' with {
+    'list': [
+    { 'original': 'images/gallery/weddings/automne-hiver/Achille.jpg', 'name': 'Achille'},
+    { 'original': 'images/gallery/weddings/automne-hiver/Automne.jpg', 'name': 'Automne'},
+    { 'original': 'images/gallery/weddings/automne-hiver/Bohane.jpg', 'name': 'Bohane'},
+    { 'original': 'images/gallery/weddings/automne-hiver/Feuilles_d_or.jpg', 'name': "Feuilles d'or"},
+    { 'original': 'images/gallery/weddings/automne-hiver/L_exotique.jpg', 'name': "L'exotique"},
+    { 'original': 'images/gallery/weddings/automne-hiver/Nuage.jpg', 'name': 'Nuage'},
+    { 'original': 'images/gallery/weddings/automne-hiver/Pain_d_epices.jpg', 'name': "Pain d'épices"},
+    { 'original': 'images/gallery/weddings/automne-hiver/Passion.jpg', 'name': 'Passion'},
+    { 'original': 'images/gallery/weddings/automne-hiver/Petale_d_orange.jpg', 'name': "Pétale d'orange"},
+    { 'original': 'images/gallery/weddings/automne-hiver/Rose.jpg', 'name': 'Rose'},
+    { 'original': 'images/gallery/weddings/automne-hiver/Saigon.jpg', 'name': 'Saigon'},
+    { 'original': 'images/gallery/weddings/automne-hiver/Sobriee.jpg', 'name': 'Sobriée'},
+    { 'original': 'images/gallery/weddings/automne-hiver/Velour.jpg', 'name': 'Velour'},
+    { 'original': 'images/gallery/weddings/automne-hiver/Voluptee.jpg', 'name': 'Voluptée'},
+    ]
+    } %}
+
+    <h3>{{ 'weddings.subtitle3'|trans }}</h3>
+    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/weddings/hanbok', 'name': 'hanbok', 'ext': 'jpg', 'length': 8 } %}
+
+    <h3>{{ 'weddings.subtitle4'|trans }}</h3>
+    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/weddings/kimono', 'name': 'kimono', 'ext': 'jpg', 'length': 2 } %}
+
 {% endblock %}

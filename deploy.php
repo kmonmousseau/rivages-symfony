@@ -9,17 +9,20 @@ set('composer_action', 'install');
 set('composer_options', '{{composer_action}} --verbose --prefer-dist --no-progress --no-interaction --optimize-autoloader --no-dev');
 set('repository', 'https://github.com/kmonmousseau/rivages-symfony');
 
+set('dump_assets', true);
+
 add('shared_files', []);
-add('shared_dirs', ['node_modules']);
-add('writable_dirs', []);
+add('shared_dirs', ['web/media', 'web/images/gallery']);
+add('writable_dirs', ['web/media']);
 
 // Servers
 host('perso')
     ->hostname('perso')
     ->set('branch', 'master')
     ->set('deploy_path', '/var/www/benjaminjouet.com')
-    ->set('writable_use_sudo', true)
+    ->set('writable_use_sudo', false)
     ->set('writable_chmod_mode', 777)
+    ->set('writable_chmod_recursive', false)
     ->set('writable_mode', 'chmod')
     ->stage('prod')
 ;
@@ -31,9 +34,4 @@ task('upload:files', function () {
     upload('.deploy/parameters.yml', '{{release_path}}/app/config/parameters.yml');
 });
 
-task('reload:php', function () {
-    run('sudo service php7.0-fpm reload');
-});
-
 before('deploy:vendors', 'upload:files');
-after('deploy:symlink', 'reload:php');

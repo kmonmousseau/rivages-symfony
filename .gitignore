@@ -16,5 +16,11 @@
 /web/bundles/
 .idea
 
+/web/images/gallery/*
+!web/images/gallery/.gitkeep
+
+/web/media/*
+!web/media/.gitkeep
+
 docker-compose.yml
 /web/css/compiled
