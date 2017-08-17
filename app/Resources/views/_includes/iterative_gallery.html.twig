@@ -1,7 +1,7 @@
 
 <div class="gallery">
     {% for i in 1..length %}
-        <a target="_blank" href="{{ asset('images/'~path~'/'~name~i~'.'~ext) }}">
+        <a target="_blank" href="{{ asset('images/'~path~'/'~name~i~'.'~ext) | imagine_filter('full_view') }}">
             <img src="{{ asset('images/'~path~'/'~name~i~'.'~ext) | imagine_filter('my_thumb') }}" />
         </a>
     {% endfor %}

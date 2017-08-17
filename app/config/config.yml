@@ -68,19 +68,27 @@ assetic:
     filters:
         cssrewrite: ~
 
-liip_imagine :
+liip_imagine:
     driver: imagick
     loaders:
         default:
             filesystem:
                 locator: filesystem_insecure
-    resolvers :
-        default :
-            web_path : ~
+    resolvers:
+        default:
+            web_path: ~
 
-    filter_sets :
-        cache : ~
-        my_thumb :
-            quality : 75
-            filters :
-                thumbnail  : { size : [130, 130], mode : outbound }
+    filter_sets:
+        cache: ~
+        my_thumb:
+            quality: 75
+            filters:
+                thumbnail:
+                    size: [130, 130]
+                    mode: outbound
+        full_view:
+            quality: 90
+            filters:
+                thumbnail:
+                    size: [1024, 768]
+                    mode: inset
