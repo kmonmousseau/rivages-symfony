@@ -1,3 +1,10 @@
+a {
+    color: #0bbd4e;
+}
+a:hover {
+    color: #08903b;
+}
+
 /* Base containers */
 html {
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
