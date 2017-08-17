@@ -47,7 +47,7 @@
 
                 <nav class="header-nav social">
                     <ul>
-                        {% for page in ['homepage', 'classes', 'weddings', 'signature', 'about'] %}
+                        {% for page in ['homepage', 'classes', 'weddings', 'signature'] %}
                             <li class="navbar-item {{ current_page == page ? 'current' : '' }}">
                                 {% if page == 'homepage' %}
                                     {% set url = path('homepage') %}

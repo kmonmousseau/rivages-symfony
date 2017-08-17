@@ -1,5 +1,7 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}{{ 'signature.title'|trans }}{% enblock %}
+
 {% block body %}
     <h1>{{ 'signature.title'|trans }}</h1>
     {{ 'signature.content'|trans|raw }}
