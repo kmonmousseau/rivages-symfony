@@ -31,7 +31,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-    color: #268bd2;
+    color: #0bbd4e;
     text-decoration: none;
 }
 a strong {
@@ -41,7 +41,7 @@ a strong {
 a:hover,
 a:focus {
     text-decoration: underline;
-    color: #1b5e8e;
+    color: #08903b;
 }
 
 /* Headings */
@@ -209,9 +209,13 @@ table {
 td,
 th {
     padding: .25rem .5rem;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #cccccc;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
     background-color: #f9f9f9;
+}
+tbody tr:nth-child(even) td,
+tbody tr:nth-child(even) th {
+    background-color: #dedede;
 }

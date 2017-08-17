@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ 'about.title'|trans }}{% enblock %}
+{% block title %}{{ 'about.title'|trans }}{% endblock %}
 
 {% block body %}
     <h1>{{ 'about.title'|trans }}</h1>
@@ -9,5 +9,5 @@
     <p>{{ 'about.content3'|trans }}</p>
     <p>{{ 'about.content4'|trans }}</p>
     <p>{{ 'about.content5'|trans }}</p>
-    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/about', 'name': 'about', 'ext': 'jpg', 'length': 6 } %}
+    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/about', 'name': 'about', 'ext': 'jpg', 'end': 6 } %}
 {% endblock %}

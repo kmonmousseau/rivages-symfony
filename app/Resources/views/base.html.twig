@@ -47,14 +47,14 @@
 
                 <nav class="header-nav social">
                     <ul>
-                        {% for page in ['homepage', 'classes', 'weddings', 'signature'] %}
+                        {% for page in ['homepage', 'classes', 'weddings', 'signature', 'provence_tour'] %}
                             <li class="navbar-item {{ current_page == page ? 'current' : '' }}">
                                 {% if page == 'homepage' %}
                                     {% set url = path('homepage') %}
                                 {% else %}
                                     {% set url = path('show', { 'page':page }) %}
                                 {% endif %}
-                                <a href="{{ url }}">{{ page|capitalize }}</a>
+                                <a href="{{ url }}">{{ ('menu.'~page)|trans }}</a>
                             </li>
                         {% endfor %}
                     </ul>

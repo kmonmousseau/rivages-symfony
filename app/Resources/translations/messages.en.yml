@@ -1,3 +1,10 @@
+menu:
+    homepage: Homepage
+    classes: Classes
+    weddings: Weddings
+    signature: Signature
+    provence_tour: Provence Tour
+
 classes:
     title: Flower arranging class
     subtitle1: Let’s learn to make beautiful flower arrangement and become a real florist!
@@ -45,6 +52,9 @@ signature:
     subtitle1: Flower cakes
     subtitle2: Eggs
     subtitle3: Carré de Marie-Antoinette
+
+provence_tour:
+    title: Provence Tour
 
 footer:
     social: Social
