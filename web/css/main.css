@@ -166,6 +166,7 @@ h1 {
 .gallery {
 }
 .gallery a {
+
     display: inline-block;
     margin-right: 1%;
 }

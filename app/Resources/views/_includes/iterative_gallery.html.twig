@@ -2,8 +2,8 @@
 <div class="gallery">
     {% set start = start is defined ? start : 1 %}
     {% for i in start..end %}
-        <a target="_blank" href="{{ asset('images/'~path~'/'~name~i~'.'~ext) | imagine_filter('full_view') }}">
-            <img src="{{ asset('images/'~path~'/'~name~i~'.'~ext) | imagine_filter('my_thumb') }}" />
+        <a target="_blank" href="{{ asset('images/'~path~'/'~name~i~'.'~ext) | imagine_filter('full_view') }}" class="{{ is_mini is defined ? 'mini' : '' }}">
+            <img src="{{ asset('images/'~path~'/'~name~i~'.'~ext) | imagine_filter(is_mini is defined ? 'my_thumb' : 'my_thumb2') }}" />
         </a>
     {% endfor %}
 </div>

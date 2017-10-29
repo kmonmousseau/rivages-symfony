@@ -64,9 +64,9 @@
     } %}
 
     <h3>{{ 'weddings.subtitle3'|trans }}</h3>
-    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/weddings/hanbok', 'name': 'hanbok', 'ext': 'jpg', 'end': 8 } %}
+    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/weddings/hanbok', 'name': 'hanbok', 'ext': 'jpg', 'end': 8, 'is_mini': true } %}
 
     <h3>{{ 'weddings.subtitle4'|trans }}</h3>
-    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/weddings/kimono', 'name': 'kimono', 'ext': 'jpg', 'end': 2 } %}
+    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/weddings/kimono', 'name': 'kimono', 'ext': 'jpg', 'end': 2, 'is_mini': true } %}
 
 {% endblock %}
