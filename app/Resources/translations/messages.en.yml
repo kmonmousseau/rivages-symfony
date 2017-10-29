@@ -3,6 +3,7 @@ menu:
     classes: Classes
     weddings: Weddings
     signature: Signature
+    flower_styling: Flower styling
     provence_tour: Provence Tour
 
 classes:
@@ -52,6 +53,11 @@ signature:
     subtitle1: Flower cakes
     subtitle2: Eggs
     subtitle3: Carré de Marie-Antoinette
+
+flower_styling:
+    title: Flower styling
+    content1: Our services also include collaboration project. We are available for project, styling flowers for commercial advertising, magazine, others.
+    content2: "Please contact us by email: benjaminjouet@live.fr"
 
 provence_tour:
     title: Provence Tour

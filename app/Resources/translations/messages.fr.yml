@@ -3,6 +3,7 @@ menu:
     classes: Cours
     weddings: Mariage
     signature: Signature
+    flower_styling: Flower styling
     provence_tour: Tour de Provence
 
 classes:
@@ -52,6 +53,11 @@ signature:
     subtitle1: Flower cakes
     subtitle2: Oeufs
     subtitle3: Carré de Marie-Antoinette
+
+flower_styling:
+    title: Flower styling
+    content1: Nos services incluent aussi la collaboration. Nous sommes disponibles pour des projets, des décors floraux pour de la publicité commerciale, des magazines, autres.
+    content2: "Contactez-nous par email : benjaminjouet@live.fr"
 
 provence_tour:
     title: Tour de Provence

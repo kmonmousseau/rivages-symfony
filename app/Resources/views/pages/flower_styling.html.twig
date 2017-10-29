@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'flower_styling.title'|trans }}{% endblock %}
+
+{% block body %}
+    <h1>{{ "flower_styling.title"|trans }}</h1>
+    <p>
+        {{ "flower_styling.content1"|trans|raw }}
+    </p>
+    <p>
+        {{ "flower_styling.content2"|trans }}
+    </p>
+    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/flower_styling', 'name': 'styling', 'ext': 'jpg', 'end': 16 } %}
+{% endblock %}

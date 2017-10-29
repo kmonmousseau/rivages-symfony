@@ -12,4 +12,4 @@ show:
     defaults: { _controller: app.main_controller:showAction }
     requirements:
         _locale: en|kr|jp|fr|cn
-        page: classes|weddings|signature|provence_tour
+        page: classes|weddings|signature|provence_tour|flower_styling
