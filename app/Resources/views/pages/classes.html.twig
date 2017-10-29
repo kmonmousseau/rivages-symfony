@@ -3,26 +3,28 @@
 {% block title %}{{ 'classes.title'|trans }}{% endblock %}
 
 {% block body %}
-    <h1>{{ "classes.title"|trans }}</h1>
-    <h3>{{ "classes.subtitle1"|trans }}</h3>
-    <p>
-        {{ "classes.content1"|trans|raw }}
-    </p>
-    <h3>{{ "classes.subtitle2"|trans }}</h3>
-    <p>
-        {{ "classes.content2"|trans|raw }}
-    </p>
-    <h3>{{ "classes.subtitle3"|trans }}</h3>
-    <p>
-        {{ "classes.content3"|trans|raw }}
-    </p>
-    <h3>{{ "classes.subtitle4"|trans }}</h3>
-    <p>
-        {{ "classes.content4"|trans|raw }}
-    </p>
-    <h3>{{ "classes.subtitle5"|trans }}</h3>
-    <p>
-        {{ "classes.content5"|trans|raw }}
-    </p>
-    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/classes', 'name': 'classes', 'ext': 'jpg', 'end': 15 } %}
+    <div class="content container">
+        <h1>{{ "classes.title"|trans }}</h1>
+        <h3>{{ "classes.subtitle1"|trans }}</h3>
+        <p>
+            {{ "classes.content1"|trans|raw }}
+        </p>
+        <h3>{{ "classes.subtitle2"|trans }}</h3>
+        <p>
+            {{ "classes.content2"|trans|raw }}
+        </p>
+        <h3>{{ "classes.subtitle3"|trans }}</h3>
+        <p>
+            {{ "classes.content3"|trans|raw }}
+        </p>
+        <h3>{{ "classes.subtitle4"|trans }}</h3>
+        <p>
+            {{ "classes.content4"|trans|raw }}
+        </p>
+        <h3>{{ "classes.subtitle5"|trans }}</h3>
+        <p>
+            {{ "classes.content5"|trans|raw }}
+        </p>
+        {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/classes', 'name': 'classes', 'ext': 'jpg', 'end': 15 } %}
+    </div>
 {% endblock %}

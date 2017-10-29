@@ -108,3 +108,11 @@ liip_imagine:
                 thumbnail:
                     size: [1024, 768]
                     mode: inset
+        cover:
+            quality: 90
+            filters:
+                upscale:
+                    min: [2000, 2000]
+                thumbnail:
+                    size: [2000, 2000]
+                    mode: outbound

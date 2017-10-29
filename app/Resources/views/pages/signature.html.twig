@@ -3,12 +3,14 @@
 {% block title %}{{ 'signature.title'|trans }}{% endblock %}
 
 {% block body %}
-    <h1>{{ 'signature.title'|trans }}</h1>
-    {{ 'signature.content'|trans|raw }}
-    <h3>{{ 'signature.subtitle1'|trans }}</h3>
-    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/signature/flower_cakes', 'name': 'cakes', 'ext': 'jpg', 'end': 6 } %}
-    <h3>{{ 'signature.subtitle2'|trans }}</h3>
-    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/signature/eggs', 'name': 'eggs', 'ext': 'jpg', 'end': 4 } %}
-    <h3>{{ 'signature.subtitle3'|trans }}</h3>
-    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/signature/carre_de_marie-antoinette', 'name': 'carre', 'ext': 'jpg', 'end': 2 } %}
+    <div class="content container">
+        <h1>{{ 'signature.title'|trans }}</h1>
+        {{ 'signature.content'|trans|raw }}
+        <h3>{{ 'signature.subtitle1'|trans }}</h3>
+        {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/signature/flower_cakes', 'name': 'cakes', 'ext': 'jpg', 'end': 6 } %}
+        <h3>{{ 'signature.subtitle2'|trans }}</h3>
+        {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/signature/eggs', 'name': 'eggs', 'ext': 'jpg', 'end': 4 } %}
+        <h3>{{ 'signature.subtitle3'|trans }}</h3>
+        {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/signature/carre_de_marie-antoinette', 'name': 'carre', 'ext': 'jpg', 'end': 2 } %}
+    </div>
 {% endblock %}

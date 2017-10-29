@@ -3,11 +3,13 @@
 {% block title %}{{ 'about.title'|trans }}{% endblock %}
 
 {% block body %}
-    <h1>{{ 'about.title'|trans }}</h1>
-    <p>{{ 'about.content1'|trans }}</p>
-    <p>{{ 'about.content2'|trans }}</p>
-    <p>{{ 'about.content3'|trans }}</p>
-    <p>{{ 'about.content4'|trans }}</p>
-    <p>{{ 'about.content5'|trans }}</p>
-    {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/about', 'name': 'about', 'ext': 'jpg', 'end': 6 } %}
+    <div class="content container">
+        <h1>{{ 'about.title'|trans }}</h1>
+        <p>{{ 'about.content1'|trans }}</p>
+        <p>{{ 'about.content2'|trans }}</p>
+        <p>{{ 'about.content3'|trans }}</p>
+        <p>{{ 'about.content4'|trans }}</p>
+        <p>{{ 'about.content5'|trans }}</p>
+        {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/about', 'name': 'about', 'ext': 'jpg', 'end': 6 } %}
+    </div>
 {% endblock %}
