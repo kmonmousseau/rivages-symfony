@@ -83,12 +83,16 @@ liip_imagine:
         my_thumb:
             quality: 75
             filters:
+                upscale:
+                    min: [130, 130]
                 thumbnail:
                     size: [130, 130]
                     mode: outbound
         my_thumb2:
             quality: 75
             filters:
+                upscale:
+                    min: [275, 275]
                 thumbnail:
                     size: [275, 275]
                     mode: outbound
