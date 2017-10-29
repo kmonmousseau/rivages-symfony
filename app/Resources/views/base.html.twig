@@ -43,6 +43,24 @@
                     <img src="{{ asset('images/chinese.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>Chinese</span>
                 </a>
             </div>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <nav class="header-nav social">
+                        <ul>
+                            {% for page in ['homepage', 'classes', 'weddings', 'signature', 'flower_styling', 'provence_tour'] %}
+                                <li class="navbar-item {{ current_page == page ? 'current' : '' }}">
+                                    {% if page == 'homepage' %}
+                                        {% set url = path('homepage') %}
+                                    {% else %}
+                                        {% set url = path('show', { 'page':page }) %}
+                                    {% endif %}
+                                    <a href="{{ url }}">{{ ('menu.'~page)|trans }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
             <div class="container">
                 <div class="header-about">
                     <img src="/images/logo.jpg" width="" height="" />
@@ -51,23 +69,7 @@
                             {{ site.title }}
                         </a>
                     </h1>
-                    <p>{{ site.description }}</p>
                 </div>
-
-                <nav class="header-nav social">
-                    <ul>
-                        {% for page in ['homepage', 'classes', 'weddings', 'signature', 'flower_styling', 'provence_tour'] %}
-                            <li class="navbar-item {{ current_page == page ? 'current' : '' }}">
-                                {% if page == 'homepage' %}
-                                    {% set url = path('homepage') %}
-                                {% else %}
-                                    {% set url = path('show', { 'page':page }) %}
-                                {% endif %}
-                                <a href="{{ url }}">{{ ('menu.'~page)|trans }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </nav>
             </div>
         </div>
         <div class="main-wrapper">

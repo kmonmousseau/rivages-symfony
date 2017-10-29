@@ -24,10 +24,13 @@ html {
     margin: 0;
 }
 .header-about {
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 /* Header nav */
+.nav-wrapper {
+    background-color: #eee;
+}
 .header-nav {
     display: block;
     font-size: 0.8rem;
@@ -54,12 +57,12 @@ html {
     padding: 0.5em 1em 0.5em 1em;
 }
 .header-nav ul li a:hover {
-    background: #eee;
+    background: #fff;
     color: #000;
     text-decoration: none;
 }
 .header-nav ul li.current a {
-    background: #eee;
+    background: #fff;
 }
 
 /* Custom containers */
@@ -75,7 +78,7 @@ html {
 }
 
 .content {
-    padding-top:    4rem;
+    padding-top:    2rem;
     padding-bottom: 4rem;
 }
 
@@ -88,7 +91,7 @@ html {
 /* Countries flag part */
 .flags {
     position: absolute;
-    top:0;
+    top:50px;
     right:0;
     margin: 3px;
     text-align: left;
