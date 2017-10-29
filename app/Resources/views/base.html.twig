@@ -28,10 +28,19 @@
         <div class="header">
             <div class="flags">
                 <a href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'en'})) }}">
-                    <img src="{{ asset('images/english.png') }}" width="30" height="20" /> <span>English</span>
+                    <img src="{{ asset('images/english.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>English</span>
+                </a>
+                <a href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'fr'})) }}">
+                    <img src="{{ asset('images/french.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>French</span>
                 </a>
                 <a href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'kr'})) }}">
-                    <img src="{{ asset('images/korean.png') }}" width="30" height="20" /> <span>Korean</span>
+                    <img src="{{ asset('images/korean.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>Korean</span>
+                </a>
+                <a href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'jp'})) }}">
+                    <img src="{{ asset('images/japanese.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>Japanese</span>
+                </a>
+                <a href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'cn'})) }}">
+                    <img src="{{ asset('images/chinese.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>Chinese</span>
                 </a>
             </div>
             <div class="container">

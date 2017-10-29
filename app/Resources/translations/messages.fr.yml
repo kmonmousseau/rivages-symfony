@@ -1,0 +1,62 @@
+menu:
+    homepage: Page d'accueil
+    classes: Cours
+    weddings: Mariage
+    signature: Signature
+    provence_tour: Tour de Provence
+
+classes:
+    title: Cours d'arrangement floral
+    subtitle1: Apprenez l’arrangement floral et devenez un vrai fleuriste !
+    subtitle2: A qui sont adressés ces cours ?
+    subtitle3: Durée ?
+    subtitle4: Comment réserver ?
+    subtitle5: En quelle langue les cours sont-ils donnés ?
+    content1: >
+        Vous voulez realiser des compositions uniques, realiser un décors floral pour un diner, une couronne ?<br />
+        Benjamin Jouet donne des cours d’art floral, avec les astuces de professionels pour réaliser vos compositions de manière plus faciles, et vous apprends à combiner les couleurs, et être créatif.<br />
+        Son style est la fusion avec le raffinement français et le detail japonais.
+    content2: >
+        Pour les personnes souhaitant apprendre le style français dans une bonne ambiance, en apprenant les techniques  pour realiser des bouquets, décorer une table, couronne de fleurs, ou arranger dans les fleurs dans un vase.<br />
+        Les étudiants sont encourages pour developer leur créativité, et peuvent rester après le cours pour poser des questions.<br />
+        Benjamin Jouet donnent des cours pour débutants et professionels. Il a enseigné des cours dans des écoles d’art floral connues en Corée du Sud et au Japon.
+    content3: Un cours dure environ 2 heures
+    content4: >
+        Contacter Benjamin par email : <a href="mailto:benjaminjouet@live.fr">benjaminjouet@live.fr</a><br />
+        Ou kakao/line : benjaminlekiwi
+    content5: Principalement en Français ou en Anglais.<br />Benjamin Jouet peut aussi communiquer en Coréen and Japonais basiques.
+
+weddings:
+    title: Mariage
+    content: >
+        Le mariage est sans aucun doute l’un des plus beaux jours de sa vie. Benjamin Jouet est spécialisé dans les bouquets de mariée. Après avoir écouté vos envies, il crée pour vous un bouquet de mariée unique à votre personnalité.<br />
+        Benjamin réalise aussi les centres de tables, arches, boutonnières, et autres arrangements pour le jour de votre mariage
+    subtitle1: Collection Printemps – Eté
+    subtitle2: Collection Automne – Hiver
+    subtitle3: Hanbok bouquet
+    subtitle4: Kimono bouquet
+
+about:
+    title: A propos
+    content1: Benjamin Jouet a grandi en Provence, au milieu des fleurs, champs de lavande, ramassé les fleurs des champs pour en faire des bouquets pour sa grand-mère.
+    content2: "Après avoir été diplômé en horticulture et aménagements paysagers, Benjamin Jouet a eu le privilège de travailler pour de magnifiques jardins dans le sud de la France: Chartreuse de Villeneuve-lès-Avignon (centre de culture  et de spectacles, monument historique), Domaine de Murtoli (résidences de luxe), l’Harmas Jean-Henri Fabre (Muséum d’histoire naturelle)"
+    content3: Après avoir vécu plusieurs années en France, Benjamin est parti travaillé aux antipodes, en Australie, Nouvelle Zélande, puis à Hong Kong et au Japon.
+    content4: Après avoir travaillé plusieurs années comme jardinier paysagiste, Benjamin decida de devenir fleuriste, et parti travailler à Hong Kong et au Japon pour des mariages haut de gamme, et donner des cours d'art floral pour débutant et professionnels. Benjamin Jouet est parti récemment travailler à Seoul en Corée du Sud pour y dispenser des cours.
+    content5: Inspiré par son enfance et son expérience à l'étranger, à travers de sublimes jardins, la nature, et les arts. Benjamin Jouet apporte une attention particulière au détails et utilise toute cette expérience, source d'inspiration pour ses créations, faisant son style unique.
+
+signature:
+    title: Signature
+    content: >
+        <p>Vous souhaitez offrir des fleurs, quelque chose d’original pour sure fera plaisir. On réalise pour vous des compositions uniques avec des fleurs de saisons, fraiches, et de haute qualité .</p>
+        <p>Pour commander, veuillez nous contacter par email ou Kakao.</p>
+    subtitle1: Flower cakes
+    subtitle2: Oeufs
+    subtitle3: Carré de Marie-Antoinette
+
+provence_tour:
+    title: Tour de Provence
+
+footer:
+    social: Social
+    social_link: Voir la page %social%
+    contact: Contact
