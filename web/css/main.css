@@ -66,6 +66,32 @@ html {
     color: #515151;
 }
 
+.homepage .header-about {
+    max-width: 100%;
+    background-size: cover;
+    text-align: center;
+    min-height: 630px;
+    min-height: 70vh;
+    padding-top: 135px;
+}
+.homepage .header-about img {
+    max-width: 11rem;
+}
+.homepage .header a {
+    color: #fff;
+}
+.homepage .header-about-content {
+    background: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+.homepage .flags {
+    background: rgba(0,0,0,0.3);
+    padding: 5px;
+    border-radius: 5px;
+}
+
 /* Custom containers */
 .main-wrapper {
     background: #eee;

@@ -26,7 +26,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('apple-icon-precomposed.png') }}">
         <link rel="shortcut icon" href="{{ asset('favicon-32x32.png') }}">
     </head>
-    <body class="{% block body_class %}{% endblock %}">
+    <body class="{{ current_page }} {% block body_class %}{% endblock %}">
         <div class="header">
             <div class="nav-wrapper">
                 <div class="container">
@@ -65,13 +65,16 @@
                     </a>
                 </div>
                 <div class="container header-about">
-                    <img src="/images/logo.jpg" width="" height="" />
-                    <h1>
-                        <a href="{{ path('homepage') }}">
-                            {{ site.title }}
-                        </a>
-                    </h1>
+                    <div class="header-about-content">
+                        <img src="{{ asset('images/logo.'~(current_page == 'homepage' ? 'png' : 'jpg')) }}" />
+                        <h1>
+                            <a href="{{ path('homepage') }}">
+                                {{ site.title }}
+                            </a>
+                        </h1>
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="main-wrapper">
