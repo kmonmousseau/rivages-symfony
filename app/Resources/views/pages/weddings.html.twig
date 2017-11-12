@@ -6,6 +6,7 @@
     <div class="content container">
         <h1>{{ 'weddings.title'|trans }}</h1>
         <p>{{ 'weddings.content'|trans|raw }}</p>
+        {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/weddings', 'name': 'wedding', 'ext': 'jpg', 'end': 12, 'is_mini': true } %}
         <h3>{{ 'weddings.subtitle1'|trans }}</h3>
         {% include '_includes/list_gallery.html.twig' with {
         'list': [
