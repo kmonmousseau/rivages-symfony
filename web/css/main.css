@@ -1,8 +1,3 @@
-/* Base containers */
-html {
-    font-family: "PT Sans", Helvetica, Arial, sans-serif;
-}
-
 /* Header */
 .header .navbar-brand {
     font-weight: normal;
@@ -35,55 +30,12 @@ html {
 .navbar-light {
     background: #fff;
 }
-.homepage .header-about {
-    max-width: 100%;
-    background-size: cover;
-    text-align: center;
-    min-height: 630px;
-    min-height: 70vh;
-    padding-top: 135px;
-}
-.homepage .header-about img {
-    max-width: 11rem;
-}
-.homepage .header-about-content {
-    background: rgba(0, 0, 0, 0.3);
-    display: inline-block;
-    padding: 10px 50px;
-    border-radius: 5px;
-}
-.homepage .flags {
-    background: rgba(0,0,0,0.3);
-    padding: 5px;
-    border-radius: 5px;
-}
 
 /* Custom containers */
 .main-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
     background: #eee;
-}
-.container {
-    max-width: 45rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.content {
-    padding-top:    2rem;
-    padding-bottom: 4rem;
-}
-
-@media (min-width: 65em) {
-    .container {
-        max-width: 50rem;
-    }
-}
-
-/* Countries flag part */
-.header-about-wrapper {
-    position: relative;
 }
 
 /* Hs */
@@ -102,7 +54,7 @@ h1 {
 .footer {
     display: block;
     margin: 10px 0;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: center;
 }
 .footer ul {
@@ -115,8 +67,8 @@ h1 {
     display: inline-block;
     margin: 0 5px;
 }
-.footer ul li a {
-    font-size: 1em;
+.footer h3 {
+    font-size: 1.55rem;
 }
 .footer .content {
     padding-top: 1rem;
@@ -134,10 +86,15 @@ h1 {
         float: left;
     }
 }
-.gallery {
-}
 .gallery a {
-
     display: inline-block;
-    margin: 0 0.5%;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.gallery a img {
+    margin:0;
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 5px;
 }

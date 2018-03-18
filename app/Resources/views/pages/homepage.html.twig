@@ -5,9 +5,17 @@
 {% block stylesheets %}
     {{ parent() }}
     <style>
-        .header-about {
+        .main-wrapper {
             background-image: url('{{ asset('images/gallery/cover.jpg') | imagine_filter('cover') }}');
             background-position: 50%;
+            padding-top: 0;
+
+            max-width: 100%;
+            background-size: cover;
+            text-align: center;
+            min-height: 630px;
+            min-height: 70vh;
+            padding-top: 135px;
         }
     </style>
 {% endblock %}

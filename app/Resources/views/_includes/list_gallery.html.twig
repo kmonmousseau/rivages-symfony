@@ -1,8 +1,8 @@
 
-<div class="gallery">
+<div class="gallery row">
     {% for item in list %}
-        <a target="_blank" href="{{ asset(item.original) | imagine_filter('full_view') }}" title="{{ item.name }}" class="mini">
-            <img src="{{ asset(item.original) | imagine_filter('my_thumb') }}" alt="{{ item.name }}" />
+        <a target="_blank" href="{{ asset(item.original) | imagine_filter('full_view') }}" title="{{ item.name }}" class="col-4 col-sm-3 col-md-2">
+            <img src="{{ asset(item.original) | imagine_filter('my_thumb2') }}" alt="{{ item.name }}" />
         </a>
     {% endfor %}
 </div>

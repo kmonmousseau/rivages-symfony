@@ -3,7 +3,7 @@
 {% block title %}{{ 'weddings.title'|trans }}{% endblock %}
 
 {% block body %}
-    <div class="content container">
+    <div class="container">
         <h1>{{ 'weddings.title'|trans }}</h1>
         <p>{{ 'weddings.content'|trans|raw }}</p>
         {% include '_includes/iterative_gallery.html.twig' with { 'path': 'gallery/weddings', 'name': 'wedding', 'ext': 'jpg', 'end': 12 } %}
