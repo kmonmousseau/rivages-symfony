@@ -2,70 +2,39 @@
 html {
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
-@media (min-width: 65em) {
-    html {
-        font-size: 18px;
-    }
-}
 
 /* Header */
-.header {
-    text-align: center;
-    background-color: #fff;
+.header .navbar-brand {
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+    font-family: "Walter Turncoat";
 }
-.header img {
-    max-width: 8rem;
-    text-align: center;
+.header .navbar-brand img {
+    max-width: 4rem;
     display: inline-block;
     margin: 0;
+}
+.header .dropdown img {
+    display: inline-block;
+    margin: 0;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.header .dropdown a:hover img {
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
 }
 .header h1 {
     font-size: 2rem;
     margin: 0;
 }
-.header-about {
-    padding: 1rem 1rem 1rem 1rem;
-}
 
 /* Header nav */
-.nav-wrapper {
-    background-color: #515151;
-}
-.header-nav {
-    display: block;
-    font-size: 0.8rem;
-    color: #adadad;
-    text-align: center;
-}
-
-.header a {
-    color: #303030;
-}
-.header-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.header-nav ul li {
-    vertical-align: middle;
-    display: inline-block;
-}
-.header-nav ul li a {
-    display: inline-block;
-    font-size: 1.2em;
-    color: #eee;
-    padding: 0.5em 1em 0.5em 1em;
-}
-.header-nav ul li a:hover {
+.navbar-light {
     background: #fff;
-    color: #515151;
-    text-decoration: none;
 }
-.header-nav ul li.current a {
-    background: #fff;
-    color: #515151;
-}
-
 .homepage .header-about {
     max-width: 100%;
     background-size: cover;
@@ -76,9 +45,6 @@ html {
 }
 .homepage .header-about img {
     max-width: 11rem;
-}
-.homepage .header a {
-    color: #fff;
 }
 .homepage .header-about-content {
     background: rgba(0, 0, 0, 0.3);
@@ -119,30 +85,6 @@ html {
 .header-about-wrapper {
     position: relative;
 }
-.flags {
-    position: absolute;
-    top:10px;
-    right:0;
-    margin: 3px;
-    text-align: left;
-}
-.flags a {
-    display: block;
-    font-size: 0.7rem;
-}
-.flags img,
-.flags span {
-    vertical-align: middle;
-}
-.flags img {
-    border: 1px solid #888;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
-.flags a:hover img {
-    -webkit-filter: none; /* Safari 6.0 - 9.0 */
-    filter: none;
-}
 
 /* Hs */
 h1, h2, h3, h4, h5, h6 {
@@ -162,10 +104,6 @@ h1 {
     margin: 10px 0;
     font-size: 0.8rem;
     text-align: center;
-    color: #eee;
-}
-.footer h3 {
-    color: #eee;
 }
 .footer ul {
     list-style-type: none;
