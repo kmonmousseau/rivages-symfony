@@ -35,3 +35,9 @@ signature:
     content: >
         <p>如果您想要选购鲜花，希望鲜花带给你幸福。我们提供各种季节鲜花和各式插花设计。</p>
         <p>请以邮件、Wechat 联系我。</p>
+
+flower_styling:
+    content1: >
+        鲜花造型
+        我们的服务同时也提供一些合作项目。包括商业广告、杂志等系列的鲜花造型设计。
+    content2: "请联系我的个人邮箱： benjaminjouet@live.fr"
