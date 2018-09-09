@@ -59,6 +59,10 @@ twig:
                     name: Google Plus
                     link: "https://plus.google.com/105998832127646355207"
                     icon: "fa-google-plus-square"
+                -
+                    name: Youtube
+                    link: "https://www.youtube.com/channel/UCwfoF8o98d3plVos_a6P2_Q"
+                    icon: "fa-youtube-square"
             mail: benjaminjouet@live.fr
             kakao: benjaminlekiwi
 
