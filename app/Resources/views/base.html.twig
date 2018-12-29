@@ -13,7 +13,7 @@
         <!-- CSS -->
         {% block stylesheets %}
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Walter+Turncoat">
+            {#<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Walter+Turncoat">#}
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             {% stylesheets
             'css/resets.css'
@@ -52,19 +52,19 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'en'})) }}">
-                                    <img src="{{ asset('images/english.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>English</span>
+                                    <img class="flag" src="{{ asset('images/english.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>English</span>
                                 </a>
                                 <a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'fr'})) }}">
-                                    <img src="{{ asset('images/french.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>French</span>
+                                    <img class="flag" src="{{ asset('images/french.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>French</span>
                                 </a>
                                 <a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'kr'})) }}">
-                                    <img src="{{ asset('images/korean.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>Korean</span>
+                                    <img class="flag" src="{{ asset('images/korean.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>Korean</span>
                                 </a>
                                 <a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'jp'})) }}">
-                                    <img src="{{ asset('images/japanese.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>Japanese</span>
+                                    <img class="flag" src="{{ asset('images/japanese.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>Japanese</span>
                                 </a>
                                 <a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale':'cn'})) }}">
-                                    <img src="{{ asset('images/chinese.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>Chinese</span>
+                                    <img class="flag" src="{{ asset('images/chinese.png') | imagine_filter('flag') }}" width="30" height="20" /> <span>Chinese</span>
                                 </a>
                             </div>
                         </li>

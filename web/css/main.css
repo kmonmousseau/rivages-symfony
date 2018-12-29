@@ -1,15 +1,15 @@
 /* Header */
 .header .navbar-brand {
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-    font-family: "Walter Turncoat";
+    font-weight: bold;
+    /*text-rendering: optimizeLegibility;
+    font-family: "Walter Turncoat";*/
 }
 .header .navbar-brand img {
     max-width: 4rem;
     display: inline-block;
     margin: 0;
 }
-.header .dropdown img {
+.flag {
     display: inline-block;
     margin: 0;
     border-radius: 2px;
@@ -17,7 +17,7 @@
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
-.header .dropdown a:hover img {
+a:hover .flag {
     -webkit-filter: none; /* Safari 6.0 - 9.0 */
     filter: none;
 }
@@ -42,9 +42,9 @@
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5rem;
     line-height: 1.25;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-    font-family: "Walter Turncoat";
+    font-weight: bold;
+    /*text-rendering: optimizeLegibility;
+    font-family: "Walter Turncoat";*/
 }
 h1 {
     text-align: center;
@@ -97,4 +97,9 @@ h1 {
     display: inline-block;
     max-width: 100%;
     border-radius: 5px;
+}
+
+blockquote.blockquote {
+    margin-top:25px;
+    font-size: 1rem;
 }
