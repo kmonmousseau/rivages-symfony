@@ -19,7 +19,7 @@ add('writable_dirs', ['web/media']);
 host('perso')
     ->hostname('perso')
     ->set('branch', 'master')
-    ->set('deploy_path', '/var/www/benjaminjouet.com')
+    ->set('deploy_path', '/var/www/html/benjaminjouet.com')
     ->set('writable_use_sudo', false)
     ->set('writable_chmod_mode', 777)
     ->set('writable_chmod_recursive', false)
